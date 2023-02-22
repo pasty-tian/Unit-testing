@@ -17,7 +17,7 @@ func GetExeFile() (string, error) {
 	// 返回上级目录
 	yamlFile := filepath.Dir(filepath.Dir(filepath.Dir(exePath)))
 	// 这个路径是手动指定的，经常需要修改
-	configFile := fmt.Sprintf("D:\\go_vscode\\src\\github.com\\Unit-testing\\config\\application.yaml", yamlFile)
+	configFile := fmt.Sprintf("./config/application.yaml", yamlFile)
 	return configFile, nil
 }
 
